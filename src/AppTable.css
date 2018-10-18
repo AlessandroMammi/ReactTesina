@@ -1,0 +1,25 @@
+#AppTablecss{
+ position: relative;
+ align-content: center;
+ border:1px solid black;
+    margin-right: 9%;
+    margin-left: 9%;
+    margin-top:0.2%;
+
+}
+
+
+td {
+  
+    border:1px solid black;
+    text-align: center;
+    padding: 3%;
+    
+  }
+  table{
+      width: 100%;
+  }
+
+
+
+  

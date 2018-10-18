@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+
+
+
+import AppTop from './AppTop.js';
+import AppTable from './AppTable';
+//import AppName from './AppName';
+
+
+
+class App extends React.Component {
+	state = {
+		clicks: 5
+	}
+
+
+  
+  render(){
+
+	  return (
+		
+		
+		<div id="mainpage">
+	   			<AppTop/>
+				   <br></br>
+				<AppTable/>
+
+			
+			<button onClick={()=>this.setState({ clicks: this.state.clicks + 1})}>Click to increment by 1</button>
+			<button onClick={()=>this.setState({ clicks: this.state.clicks - 1})}>Click to decrement by 1</button>
+    	</div>
     );
   }
 }
 
 export default App;
+
+
+
+
